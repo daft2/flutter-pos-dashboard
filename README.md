@@ -5,7 +5,6 @@ A simple dashboard made with Flutter
 # features
 - Switch for Dark/Light Mode
 - Menu Button
-- (?)Hero Section
 
 ## Credits
 
