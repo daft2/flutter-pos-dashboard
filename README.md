@@ -1,16 +1,16 @@
-# pos
+# PoS Dashboard
 
-A new Flutter application.
+A simple dashboard made with Flutter
 
-## Getting Started
+# features
+- Switch for Dark/Light Mode
+- Menu Button
+- (?)Hero Section
 
-This project is a starting point for a Flutter application.
+## Credits
 
-A few resources to get you started if this is your first Flutter project:
+Design reference for this dashboard:
+![Inspired design](https://cdn.dribbble.com/users/2365796/screenshots/7130829/media/c6b43ddd360a2924ad7af88c16214768.png)
+[a Derlaxy dribbble](https://dribbble.com/shots/7130829-Product-Management-Ui-Design)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Icons by [a Hugo Icons8](https://icons8.com/illustrations/style--hugo-1) 
