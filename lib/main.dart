@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'menu-button.dart';
 
 void main() {
@@ -31,29 +32,43 @@ class _MyAppState extends State<MyApp> {
                 child: Container(
                   child: Column(
                     children: [
-                      Align(
-                        child: Switch(
-                          value: isSwitched,
-                          onChanged: (bool value) {
-                            setState(() {
-                              isSwitched = value;
-                              themeData = isSwitched
-                                  ? ThemeData.dark()
-                                  : ThemeData.light();
-                              menuColor =
-                                  isSwitched ? Colors.black26 : Colors.white54;
-                              subTextColor =
-                                  isSwitched ? Colors.white : Color(0xFF566288);
-                              moneyTextColor = isSwitched
-                                  ? Colors.redAccent
-                                  : Colors.blueAccent;
-                            });
-                          },
-                          inactiveTrackColor: Colors.black26,
-                          activeTrackColor: Colors.white70,
-                          activeColor: Colors.white,
-                        ),
-                        alignment: Alignment.topRight,
+                      Row(
+                        children: [
+                          Container(
+                            child: Icon(FontAwesomeIcons.bars),
+                            height: 50,
+                            width: 50,
+                            margin: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: moneyTextColor,
+                            ),
+                          ),
+                          Switch(
+                            value: isSwitched,
+                            onChanged: (bool value) {
+                              setState(() {
+                                isSwitched = value;
+                                themeData = isSwitched
+                                    ? ThemeData.dark()
+                                    : ThemeData.light();
+                                menuColor = isSwitched
+                                    ? Colors.black26
+                                    : Colors.white54;
+                                subTextColor = isSwitched
+                                    ? Colors.white
+                                    : Color(0xFF566288);
+                                moneyTextColor = isSwitched
+                                    ? Colors.redAccent
+                                    : Colors.blueAccent;
+                              });
+                            },
+                            inactiveTrackColor: Colors.black26,
+                            activeTrackColor: Colors.white70,
+                            activeColor: Colors.white,
+                          ),
+                        ],
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       ),
                       SizedBox(
                         height: 30,
@@ -76,9 +91,6 @@ class _MyAppState extends State<MyApp> {
                   ),
                   margin: EdgeInsets.all(15),
                   width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: menuColor,
-                      borderRadius: BorderRadius.circular(15)),
                 ),
               ),
               Expanded(

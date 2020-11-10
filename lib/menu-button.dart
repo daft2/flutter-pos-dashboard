@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pos/ProductPage.dart';
 
 class MenuButton extends StatelessWidget {
   MenuButton(
@@ -13,7 +14,8 @@ class MenuButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print('$labelMenuButton Button pressed.');
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ProductPage()));
       },
       child: Container(
         child: Column(
