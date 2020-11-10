@@ -2,9 +2,9 @@ A simple dashboard i made with flutter from scratch to pratice converting design
 
 # Screenshoots
 
-[Dashboard](Screenshot_1605010589.png.png)
+[Dashboard](https://github.com/daft2/flutter-pos-dashboard/blob/main/Screenshot_1605010589.png)
 
-[Product](Screenshot_1605010594.png)
+[Product](https://github.com/daft2/flutter-pos-dashboard/blob/main/Screenshot_1605010594.png)
 
 
 ## Credits
